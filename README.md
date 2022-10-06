@@ -17,13 +17,6 @@ https://www.nuget.org/packages/ksemenenko.ColorThief.Forms/
 | ------------------- | :-----------: | :------------------: |
 |Xamarin.iOS|Yes|iOS 6+|
 |Xamarin.Android|Yes|API 10+|
-|Windows 10 UWP|Yes|10+|
-|Windows Phone 8|No|8.0+|
-|Windows Phone 8.1|No|8.1+|
-|Windows Store|No|8.1+|
-|Xamarin.Mac|No||
-|Desktop .NET 4.5|Yes||
-|Desktop .NET 4.6|Yes||
 
 ## How to use
 
@@ -40,10 +33,4 @@ In this example, we build an 8 color palette.
 ```cs
 var colorThief = new ColorThief();
 colorThief.GetPalette(sourceImage, 8);
-```
-
-For Xamarin.Forms
-
-```cs
-await CrossColorThief.Current.GetPalette(sourceImage);
 ```

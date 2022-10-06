@@ -144,13 +144,6 @@
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\ColorThief.Forms.Android\ColorThief.Forms.Android.csproj">
-      <Project>{85310049-2c64-4c1e-bf5a-212a50e611ee}</Project>
-      <Name>ColorThief.Forms.Android</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <Import Project="..\ColorTestApp\ColorTestApp.projitems" Label="Shared" Condition="Exists('..\ColorTestApp\ColorTestApp.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
